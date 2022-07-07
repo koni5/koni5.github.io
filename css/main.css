@@ -43,7 +43,7 @@ html {
 }
 
 .header nav #navlinks a {
-  margin-left: 30px;
+  margin-left: 10px;
   z-index:1;
   text-decoration: none;
   color: antiquewhite;
