@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homework.css">
+    <title>HomeWork</title>
+</head>
+<body>
+    <div class="navlink">
+        <h1>目录</h1>
+        <a href="#一">一.网页整体效果展示</a>
+        <a href="#一.1">&nbsp;1.主页面展示</a>
+        <a href="#一.2">&nbsp;2.子页面展示</a>
+        <a href="#二">二.网页实现过程</a>
+        <a href="#二.1">&nbsp;1.主页面导航条的建立</a>
+        <a href="#二.2">&nbsp;2.主页面全图背景设计</a>
+        <a href="#二.3">&nbsp;3.子页面设计</a>
+        <a href="#二.4">&nbsp;4.最后footer设计</a>
+        <a href="#三">三.问题解决及未解决</a>
+        <a href="#三.1">&nbsp;1.已解决的问题</a>
+        <a href="#三.2">&nbsp;2.未解决的问题</a>
+    </div>
+    <section id="一">
+        <h1>一.网页整体效果展示</h1>
+        <h2 id="一.1">1.主页面展示</h2><br>
+        <p style="text-align:center">
+            <img src="/imag-homework/1.png" width="70%">
+        </p><br>
+        <h2 id="一.2">2.子页面展示</h2><br>
+        <p style="text-align:center">
+            <img src="/imag-homework/4.png" width="70%">
+        </p>
+        <p style="text-align:center">
+            <img src="/imag-homework/2.png" width="70%">
+        </p>
+        <p style="text-align:center">
+            <img src="/imag-homework/3.png" width="70%">
+        </p><br>
+        <p style="text-align:center">
+            <img src="/imag-homework/5.png" width="70%">
+        </p><br>
+    </section>
+    <section id="二">
+        <h1>二.网页实现过程</h1>
+        <h2 id="二.1">1.主页面导航条的建立</h2>
+        <p> &nbsp;&nbsp;我这里导航条使用了一个&lt;nav&gt;标签，其内容包含5个导航条,可以快速锁定所需要的内容部分，是网页开发中及其重要的一部分，也
+            影响着用户的体验性。我这里导航条使用了一个&lt;nav&gt;标签，其内容包含5
+            个&lt;a&gt;超链接，来实现浏览者快速定位到自己想看的内容,并且我在跳转链接
+            这里设置了scroll-behavior=smooth来使页面的跳转变得不那么生硬，更加平滑。
+        </p>
+        <p style="text-align:center">
+            <img src="/imag-homework/6.png"width=100%>
+        </p>
+        <p>&nbsp;&nbsp;导航条部分html代码如下</p>
+        <p style="text-align:center">
+            <img src="/imag-homework/7.png"width=85% height="400px">
+        </p>
+        <p>&nbsp;&nbsp;导航条的布局以及导航条划过hover时的特效由css编写。hover特效主要
+            先用text-decoratiom=none去除下划条，再设置text-duration特效的总时间
+            text-delay设置一下多长时间执行操作，最后在hover伪元素那里设置划过时变为什么即可
+        </p><br>
+        <h2 id="二.2">2.主页面全图背景设计</h2>
+        <p>&nbsp;&nbsp;效果如图:</p>
+        <p style="text-align:center">
+            <img src="/imag-homework/1.png" width="80%">
+        </p>
+        <P>&nbsp;&nbsp;主页背景的布局由css实现,代码如下：</P>
+        <p style="text-align:center">
+            <img src="/imag-homework/8.png" width="80%">
+        </p>
+        <P>&nbsp;&nbsp;这里将height设置为100vh，意为将背景图片占据页面100%位置。设置background-size:cover，让背景图片尽量覆盖原始背景图
+            background-attachment：fixed将背景图片固定，不随滚轮滑动
+            布局选择了弹性布局使布局更灵活
+        </P>
+        <p>&nbsp;&nbsp;这里只给出了部分css代码，考虑代码过多就省略了</p><br>
+        <h2 id="二.3">3.子页面设计</h2>
+        <p>&nbsp;&nbsp;我总共设计了4个子页面。它们的排版是差不多，现在我就选择其中一个子页面进行介绍</p>
+        <P>&nbsp;&nbsp;子页面效果图如下：</P>
+        <p style="text-align:center">
+            <img src="/imag-homework/3.png" width="80%">
+        </p>
+        <P>&nbsp;&nbsp;在子页面中设置了两个关键的选择器，一个是修饰行布局，另一个是修饰列布局
+            我在设计过程中考虑到我主题的呈现性，所以行其实只有一个元素。<br>
+            在行选择器中，我设置了元素为弹性盒子对象元素。通过设定flex-wrap：wrap
+            来规定灵活的项目在必要的时候拆行或者拆列，以此来达到布局灵活的目的。
+            box-pack:justify，设置在每个子元素之间分割多余的空间，让首个子元素与最后
+            一个子元素后没有多余空间。justify-contenet:space-between，它会把子元素靠边对齐
+            并平均分配剩余空间，让布局更加对称协调
+        </P>
+        <P>&nbsp;&nbsp;在列选择器中，由于列选择器是嵌套在行选择器中的，所以列部分的元素也是布局灵活的弹性盒子模型
+            这里设置背景颜色为background-color:antiquewhite白色来区别整体的背景颜色,
+            再设置box-shaow属性，让展示的元素有阴影，从而达到立体的效果。然后通过transition属性设置值
+            我在这里只填了一个"过渡效果总共需要花费时间为0.2"的值，因为我只填了一个参数，所以transition-property
+            这里默认为过渡效果所有属性。再对hover选择器设置需要过度的效果，这里我设置的效果为tansition:scale(1.1)
+            意思是鼠标划过指定元素时，它的x轴和y轴以中心膨胀1.1倍。此外框内的圆形图片，通过设置mragin，width和height将图片框在对应的大小位置
+            再设置border-radius的值来使图片达到圆角的效果，以上就是子页面的核心部分说明
+        </P>
+        <P>&nbsp;&nbsp;下面给出部分css代码</P>
+        <p style="text-align:center">
+            <img src="/imag-homework/9.png" width=70% height="850px">
+        </p>
+        <h2 id="二.4">4.footer设计</h2>
+        <P>&nbsp;&nbsp;最后部分较为简单,就是做了一个背景颜色过渡的效果，我这里采用了background中linear-gradient渐变函数做了一个渐变效果
+            将顶部颜色设置为与背景颜色一致，底部颜色进行搭配，将这两个颜色参数写进linear-gradient中就可以得到想要的样式。这里注意一下顶部颜色
+            最好与原来背景颜色一致，不然会有明显的分割感。
+        </P>
+        <P>&nbsp;&nbsp;代码如下</P>
+        <p style="text-align:center">
+            <img src="/imag-homework/10.png" width="80%">
+            <img src="/imag-homework/11.png" width="80%">
+        </p><br>
+    </section>
+    <section id="三">
+        <h1>三.问题解决及未解决</h1>
+        <h2 id="三.1">1.已解决的问题</h2>
+        <p>1.1&nbsp;设计过程中，发现固定的导航栏在滚动条往下滑动时，会被图片所挡住。查询相关资料知道
+            可以设置z-index属性的值来让导航栏始终在最顶层，这样就不会被图片所遮挡了
+        </p>
+        <p>1.2&nbsp;在最后介绍恶魔果实那一部分时，人物的图片放入我规定好的大小空间，设置好圆角时
+            有一张图片始终不能变成圆形，而是一个椭圆形，在尝试了几次设置图片大小和设置圆角后依然没有
+            解决问题，于是我重新编辑了图片的尺寸就成功了。因为我找的图片太小了，所以无法装进我设置好的
+            图片空间里只能变为椭圆形
+        </p>
+        <p>1.3&nbsp;导航栏设置划过导航条变大特效时，当时我把transition-duration和transition-delay放在了CSS
+            hover修饰器中，导致当我选中导航条时特效没有问题，但是当我鼠标移开时，特效消失很快，没有受到transition-duration的影响。
+            我思考后，发现transition的一切效果只有在鼠标滑过时才生效，要想使得移开也生效，应该把transition的所有设置放在CSS中的
+            &lt;a&gt;修饰器中，就可以解决这个问题
+        </p><br>
+        <h2 id="三.2">2.未解决的问题</h2>
+        <p>&nbsp;我将导航栏固定在了上方，也设置了z-index属性来确保不会被图片遮挡。但是当我到恶魔果实介绍那个部分，当鼠标移动到介绍的
+            内容时，我设置了一个tansform-scale拉伸特效，当这个特效触发时，导航栏会被意外地挡住，我设置了z-index也没有用对此我觉得这个
+            问题可能要使用javascript来解决。因为时间紧张，javascript没有掌握很好，就没有解决这个问题
+        </p>
+    </section>
+
+</body>
+</html>

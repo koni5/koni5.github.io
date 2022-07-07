@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif SC', serif;
+}
+html {
+    margin-top: 20px;
+    background-color:#fff2df ;
+    text-align: left;
+    scroll-behavior: smooth;
+  }
+.navlink{
+    position:fixed;
+    height: 100vh;
+    background-color:#fff2df ;
+    text-align: left;
+    scroll-behavior: smooth;
+}
+.navlink h1{
+    margin-bottom: 50px;
+}
+.navlink a{
+    margin-bottom: 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 40px;
+}
+#一 h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+#一 h2{
+    text-align: center;
+    font-size: 40px;
+}
+#一 span img{
+    text-align: center;
+}
+#二 h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+#二 h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+#二 p{
+    line-height: 40px;
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    margin-right: 20%;
+}
+#三 h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+#三 h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+#三 p{
+    line-height: 40px;
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    margin-right: 20%;
+}
